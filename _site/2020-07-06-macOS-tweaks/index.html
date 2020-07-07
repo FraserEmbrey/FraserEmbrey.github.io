@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2020 -->
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Mac tweaks</title>
+  
+  
+  <meta name="author" content="Fraser Embrey">
+  
+  
+  
+  <meta name="description" content="Some tweaks I like to do to my mac to change some default behaviours">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Fraser Embrey - A personal site for my portfolio and blog" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/main.css">
+    
+  
+
+  
+
+  
+
+  <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="Mac tweaks">
+  
+
+   
+  <meta property="og:description" content="Some tweaks I like to do to my mac to change some default behaviours">
+  
+
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Fraser Embrey">
+  <meta property="og:article:published_time" content="2020-07-06T00:00:00+01:00">
+  
+
+  
+  <meta property="og:url" content="http://localhost:4000/2020-07-06-macOS-tweaks/">
+  <link rel="canonical" href="http://localhost:4000/2020-07-06-macOS-tweaks/">
+  
+  
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/img/avatar-icon.jpeg">
+  
+
+
+  <!-- Twitter summary cards -->
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  
+  <meta name="twitter:title" content="Mac tweaks">
+  
+
+  
+  <meta name="twitter:description" content="Some tweaks I like to do to my mac to change some default behaviours">
+  
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-icon.jpeg">
+  
+
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+  
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom "><a class="navbar-brand" href="http://localhost:4000/">Fraser Embrey</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+          </li></ul>
+  </div>
+
+  
+
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Mac tweaks</h1>
+      
+        
+      <h2 class="post-subheading">Some tweaks I like to do to my mac to change some default behaviours</h2>
+      
+      
+      
+      
+          <span class="post-meta">Posted on 06 July, 2020</span>
+          
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container-md">
+  <div class="row">
+    <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+
+      
+
+      <article role="main" class="blog-post">
+        <p>macOS allows one to set a number of options that are unavailable in system preferences. It can often be hard to find a unified place for all the tweaks I like to make.</p>
+
+<h3 id="app-by-app-setting-to-close-windows">App-by-app setting to close windows</h3>
+<p>I like to have apps reopen the windows that were open the last time I quit, this preference is in System Preferences, however there are some apps where I prefer they don’t reopen the windows. This example will prevent Preview from reopening and can be set for pretty much any app, it works for all the latest versions of macOS including the Big Sur beta.
+<code class="highlighter-rouge">defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false</code></p>
+
+<h3 id="turn-off-volume-hud">Turn off volume HUD</h3>
+<p>Does what it says in the title.
+From <a href="https://apple.stackexchange.com/questions/16849/how-do-i-disable-the-volume-control-overlay">here</a>
+<code class="highlighter-rouge">sudo defaults write /System/Library/LaunchAgents/com.apple.OSDUIHelper Disabled -bool YES</code></p>
+
+<h3 id="hide-desktop-icons">Hide desktop icons</h3>
+<p>Useful for conference calls or showing off your desktop in a screenshot. I also like using the desktop folder as a general inbox but without it creating visual clutter on my desktop. Just beware that clicking the desktop background will no longer count as switching to Finder so you will have to use the dock or app switcher to open the app.
+<code class="highlighter-rouge">defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder</code></p>
+
+<h3 id="italics-in-terminal">Italics in terminal</h3>
+<p>The terminal emulator in macOS uses the xterm-256color profile by default which doesn’t include support for italics, even if the terminal does. To change the default it is as simple as copying the below to a file and running the command <code class="highlighter-rouge">tic your-configuration-file</code>
+<code class="highlighter-rouge">defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false</code></p>
+
+<h3 id="hosts-file-to-block-dodgy-sites">Hosts file to block dodgy sites</h3>
+<p>The StevenBlack hosts file blocks a number of adware and malware domains, there are also versions blocking fake news, gambling, porn and social media in a variety of combinations. The below code will integrate the current version with your hosts file. As malware is being hosted in new places all the time it is advisable to update the hosts file from time to time, you might want to set up a launchdaemon to do it automatically.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | sudo tee -a /etc/hosts
+egrep -ve "^#|^255.255.255.255|^127.|^0.|^::1|^ff..::|^fe80::" /etc/hosts | sort | uniq | egrep -e "[1,2]|::"
+</code></pre></div></div>
+
+<p>I also use <a href="https://nextdns.io">NextDNS</a> which allows me to use encrypted DNS and keep track of my own queries as well as set rules block some sites from even being resolved.</p>
+
+      </article>
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+          
+            <a href="/tags#macOS">macOS</a>
+          
+            <a href="/tags#tweaks">tweaks</a>
+          
+          
+        </div>
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+    <a href="https://twitter.com/intent/tweet?text=Mac+tweaks&url=http%3A%2F%2Flocalhost%3A4000%2F2020-07-06-macOS-tweaks%2F"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020-07-06-macOS-tweaks%2F"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020-07-06-macOS-tweaks%2F"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        
+        <li class="page-item next">
+          <a class="page-link" href="/2020-07-07-nibar/" data-toggle="tooltip" data-placement="top" title="macOS Status Bar with Übersicht">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
+              
+  
+  
+  
+
+  
+
+
+
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="mailto:frsr@frsr.me" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/fraserembrey" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://500px.com/fraserembrey" title="500px">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-500px fa-stack-1x fa-inverse" aria-hidden="true"></i>
+      </span>
+      <span class="sr-only">500px</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="https://linkedin.com/in/fraserembrey" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.instagram.com/fraserembrey" title="Instagram">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Instagram</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Fraser Embrey
+        &nbsp;&bull;&nbsp;
+      
+      2020
+
+      
+        &nbsp;&bull;&nbsp;
+        <a href="http://localhost:4000/">frsr.me</a>
+      
+
+      
+      </p>
+      <!-- Please don't remove this, keep my open source work credited :) -->
+      <p class="theme-by text-muted">
+        Theme by
+        <a href="https://beautifuljekyll.com">beautiful-jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+  
+    
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/main.js"></script>
+    
+  
+
+
+
+
+
+
+  
+  </body>
+</html>
