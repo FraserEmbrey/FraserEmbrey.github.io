@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Crimson Pro', 'Times New Roman', serif;
+  font-family: 'IBM Plex Serif', 'Times New Roman', serif;
   font-size: 1.125rem;
   color: #404040;
   position: relative;
@@ -24,6 +24,11 @@ body {
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
+}
+
+p a:hover::after {
+    font-family: "Font Awesome 5 Free";
+    content: "º";
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
