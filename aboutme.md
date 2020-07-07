@@ -5,13 +5,12 @@ show-avatar: false
 subtitle: Product designer
 ---
 
+[profile]
 Influenced by German Bauhaus design, I have an innovative and function-driven approach. Preferring clean minimalist design which empowers the user and gets out of their way, my process starts with deep understanding for the problem at hand, considering other angles and then simplifying the user experience. My goal is to create products that are simultaneously, immensely usable and beautiful.
 
-My passion for the natural world strongly influences my design work, both the aesthetic component and the effect the product will have on the environment.
+My passion for the natural world strongly influences my design work, both the aesthetic component and the environmental impact.
 
-I am an advocate for open source, accessibility and individuality.
-
-Studying physics at university allowed me to develop my deep interest in the fundamental working of the world and potential new materials. I embrace cutting edge technology as well as looking at traditional methods of craftsmanship. Currently I am teaching myself Rust and learning about Lie groups, I have also taken up Japanese.
+Studying physics at university allowed me to develop my deep interest in the fundamental workings of the world and potential new materials. I embrace cutting edge technology as well as looking at traditional methods of craftsmanship. Currently I am teaching myself Rust and learning about Lie groups, I have also taken up Japanese.
 
 In my free time I will be working on my photography or cooking. I am currently employed as the lead designer for a web-app at Octoply, and also looking at IOT devices using micropython and pyboard.
 
@@ -35,3 +34,6 @@ For university I moved to London where I earned my BSc and I have continued to w
 
 ### The future
 I would like to travel more and would love to experience living in a different country. During my time at King's I hoped to go for a year abroad but was unable to, once we are able to travel more freely again I plan to visit many places around the world. 
+
+
+[profile]: assets/img/profile.jpeg
