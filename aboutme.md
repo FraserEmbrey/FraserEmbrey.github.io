@@ -5,7 +5,6 @@ show-avatar: false
 subtitle: Product designer
 ---
 
-[profile]
 Influenced by German Bauhaus design, I have an innovative and function-driven approach. Preferring clean minimalist design which empowers the user and gets out of their way, my process starts with deep understanding for the problem at hand, considering other angles and then simplifying the user experience. My goal is to create products that are simultaneously, immensely usable and beautiful.
 
 My passion for the natural world strongly influences my design work, both the aesthetic component and the environmental impact.
