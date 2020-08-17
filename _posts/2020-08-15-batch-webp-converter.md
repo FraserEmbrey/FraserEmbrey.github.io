@@ -1,6 +1,12 @@
 ---
+layout: post
+title: Batch webp converter
+subtitle: A fish function to batch convert using the webp tools
+show-avatar: false
+tags: [macOS, linux, tools, fish, web]
 published: true
 ---
+
 # Batch image conversion to webp
 
 Converting images to various formats and sizes for the web is a modern necessity. Some services automate image conversion or delivery but sometimes manual processing makes the most sense. 
