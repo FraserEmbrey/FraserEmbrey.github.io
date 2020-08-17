@@ -7,20 +7,18 @@ tags: [macOS, linux, tools, fish, web]
 published: true
 ---
 
-# Batch image conversion to webp
-
 Converting images to various formats and sizes for the web is a modern necessity. Some services automate image conversion or delivery but sometimes manual processing makes the most sense. 
 
 One of the common image formats on the web is webp from Google. ImageMagick, which is a brilliant and highly capable tool, can convert to and from webp pretty handily but often all I want is to generate a set of webp versions from a folder of images. Google has released their [conversion tools][1] for webp (which ImageMagick uses too) and I decided to create a fish function so with a simple command I can batch convert all images in the current folder.
 
-## An aside about fish
+### An aside about fish
 I like fish as it just works (for me), I don't have to set up an rc file so I can get command history (*cough* zsh *cough*) and I don't need to find and install a plethora of plugins for sensible features such as syntax highlighting or history-based autocomplete. If you don't use fish then the scripts shown won't work, you are welcome to make a version for your preferred shell.
 
-## The function
+### The function
 
 Since cwebp converts one file at a time, each file needs to be fed into the tool separately. It is really easy to set up a simple batch convert for a set of images of one file type like this:
 
-```
+``` shell
 for file in *.jpg
 	cwebp -o (basename $file .jpg).webp $file
 end
@@ -32,7 +30,7 @@ The supported arguments are for help, decode and a subset of options like resize
 
 The function will also decode webp to png, tiff or bmp; as supported by cwebp. Not only can I batch convert images in my folder but I can choose which file types to encode from, what size output and the conversion method easily. Here is the difference when converting a set of images to webp at 500px with my script vs cwebp directly. 
 
-```
+``` console
 # with my script
 wpc -r 500
 
