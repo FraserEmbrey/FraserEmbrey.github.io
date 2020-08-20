@@ -6,7 +6,7 @@ tags:
   - maths
   - physics
   - group theory
-published: true
+published: false
 ---
 Cayley's Theorem is a fascinating link between the symmetric groups and all other groups. The theorem states that: any group G can be embedded into a subgroup of the permutation group of G. In other words there is some isomorphism from G onto a subgroup of Perm(G), this perhaps doesnt seem like the most groundbreaking assertion but it means that any proof for subgroups of a permutation group works generally.
 
