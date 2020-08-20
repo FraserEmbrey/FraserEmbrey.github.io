@@ -2,16 +2,21 @@
 layout: post
 title: Cayley's Theorem
 show-avatar: false
-tags: [maths, physics, group theory]
-published: false
+tags:
+  - maths
+  - physics
+  - group theory
+published: true
 ---
 # Cayley's Theorem
 
-Any group G can be embedded into a subgroup of the permutation group of G. In other words there is some isomorphism from G onto a subgroup of Perm(G).
+Cayley's Theorem is a fascinating link between the symmetric groups and all other groups. The theorem states that: any group G can be embedded into a subgroup of the permutation group of G. In other words there is some isomorphism from G onto a subgroup of Perm(G), this perhaps doesnt seem like the most groundbreaking assertion but it means that any proof for subgroups of a permutation group works generally.
+
+To prove the theorem a group G is chosen along with a permutation group of that group (a group that has all the possible permutation actions on G, not all possible permutations of G), then showing that G maps onto a subset of Perm(G).
+
+### Proof
 
 Perm(G) is the group of permutations on G. As Perm(G) has the order |G|! the order of Perm(G) is always greater than or equal to that of G. Cayley's theorem is easy to demonstrate for small groups like $Z_2 = (\{0,1\}, + \text{mod } 2)$. Since  $Perm(Z_2)$ contains an identity and a transposition action. This is clearly isomorphic to the original set with 1 being the identity and 2 the transposition.
-
-Cayley's Theorem is important as it unifies all groups with symmetric groups, any groups can be made isomorphic to a permutation group of another set.
 
 The proof for the theorem involves taking an homomporphism from G to a subset of Perm(G) and showing that the map is isomorphic and its image is a group.
 
