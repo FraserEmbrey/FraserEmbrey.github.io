@@ -3,6 +3,7 @@
 <style>
   polygon {
     fill: #000000;
+    fill-rule:evenodd;
   }
   @media (prefers-color-scheme: dark) {
     polygon {
@@ -10,6 +11,6 @@
     }
   }
 </style>
-<polygon points="100,10 5,85 100,190 35,100" style="fill:black;fill-rule:evenodd;" />
-<polygon points=" 195,150 100,150 195,50 100,50" style="fill:black;fill-rule:evenodd;" />
+<polygon points="100,10 5,85 100,190 35,100" />
+<polygon points=" 195,150 100,150 195,50 100,50" />
 </svg>
