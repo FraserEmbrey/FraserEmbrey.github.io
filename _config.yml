@@ -1,215 +1,92 @@
-# --- Basic options --- #
+# Site settings
+title: Fraser's Blog
+SEOTitle: Fraser's awesome blog
+header-img: img/home-bg.jpg
+email: create@frsr.me
+description: "A cool blog that I use to show Dara how to build a blog for free and easily"
+keyword: "frsr_photo, photo, photographer, fraserembrey, react"
+url: "https://frsr.me" # your host, for absolute URL
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
-# Name of website
-title: Fraser Embrey
+# Publish posts or collection documents with a future date.
+future: true
 
-# Short description of your site
-description: A personal site for my portfolio and blog
+# SNS settings
+RSS: false
+weibo_username: 
+zhihu_username: 
+github_username: fraserembrey
+twitter_username: fraserembrey
+#facebook_username:  
+#linkedin_username:  firstname-lastname-idxxxx
 
-# Your name to show in the footer
-author: Fraser Embrey
-
-# --- List of links in the navigation bar --- #
-
-navbar-links:
-  About Me: "aboutme"
-  Projects: "projects"
-  Blog: "blog"
-  Demosite: "Octoply_website_design" 
-
-# --- Logo --- #
-
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.jpeg"
-
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
-
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-#title-img: /path/to/image
-
-
-# --- Footer options --- #
-
-# Select the social network links that you want to show in the footer.
-# Uncomment the links you want to show and add your information to each one.
-# If you don't want to show a link to an RSS feed, set rss to "false".
-social-network-links:
-  email: "frsr@frsr.me"
-  github: fraserembrey
-  instagram: fraserembrey
-  linkedin: fraserembrey
-  500px: fraserembrey
-  rss: false
-#  twitter: daattali
-#  facebook: deanattali
-#  reddit: yourname
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-
-# --- General options --- #
-
-# Select which social network share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
-
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "frsr.me"
-
-# Create a "tags" index page and make tags on each post clickable
-link-tags: true
-
-# Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-
-# --- Colours / background image --- #
-
-# Personalize the colors in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#F5A4C8"
-navbar-text-col: "#404040"
-navbar-border-col: "#F5A4C8"
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#1282C9"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
-
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
-
-# --- Web Statistics Section --- #
-
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
-
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
-
-# Google Tag Manager ID
-#gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
-
-# --- Comments --- #
-
-# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
-
-# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-#fb_comment_id: ""
-
-# To use Utterances comments: (0) uncomment the following section, (1) fill in
-# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
-# (3) Install the Utterances app in your repository https://github.com/apps/utterances
-# See more details about the parameters below at https://utteranc.es/
-#utterances:
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  issue-term: title   # Mapping between blog posts and GitHub issues
-#  theme: github-light # Utterances theme
-#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
-
-# To use Staticman comments, first invite `staticmanlab` as a collaborator to your repository and
-# accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`.
-# Then uncomment the following section and fill in "repository", "branch", and "endpoint".
-# If you want to use reCaptcha for staticman (optional for spam protection), then fill
-# in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
-# See more details at https://staticman.net/
-#staticman:
-#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
-#  reCaptcha:
-#    siteKey  : # Use your own site key, you need to apply for one on Google
-#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
-
-# --- Misc --- #
-
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
-
-# Ruby Date Format to show dates of posts
-date_format: "%d %B, %Y"
-
-# Facebook App ID
-#fb_app_id: ""
-
-
-# --- You don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "Europe/London"
-markdown: kramdown
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
-paginate_path: "/blog/page:num/"
-
-kramdown:
-  input: GFM
-
-# Default YAML values (more information on Jekyll's site)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-      readtime: false # add estimated reading time on all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "page"
-      show-avatar: true
-
-# Exclude these files from production site
+permalink: pretty
+paginate: 10
 exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
+  [
+    "less",
+    "node_modules",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "README.zh.md",
+  ]
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Disqus settings
+disqus_username: fraser
+
+# Netease settings
+netease_comment: false
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: "_________" # Format: UA-xxxxxx-xx
+ga_domain: frsr.me
+
+# Sidebar settings
+sidebar: true # whether or not using Sidebar.
+sidebar-about-description: "I am Fraser, a cool photographer from Brighton"
+sidebar-avatar: https://avatars.githubusercontent.com/u/7635426?v=4 # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# Featured Tags
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 0 # A tag will be featured if the size of it is more than this condition value
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: true
+
+# Friends
+friends:

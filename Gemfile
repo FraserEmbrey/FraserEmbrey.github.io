@@ -1,7 +1,7 @@
-# frozen_string_literal: true
-gem 'kramdown-parser-gfm', '~> 1.1'
+source 'https://rubygems.org'
+gem 'jekyll-paginate'
 
-source "https://rubygems.org"
+gem "jekyll", "~> 4.0"
+gem "rake"
 
-gemspec
-
+gem "webrick", "~> 1.7"
